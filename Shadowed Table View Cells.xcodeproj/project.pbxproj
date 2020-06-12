@@ -9,19 +9,21 @@
 /* Begin PBXBuildFile section */
 		810435E32493993F0053A2D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810435E22493993F0053A2D3 /* AppDelegate.swift */; };
 		810435E72493993F0053A2D3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810435E62493993F0053A2D3 /* ViewController.swift */; };
-		810435EA2493993F0053A2D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 810435E82493993F0053A2D3 /* Main.storyboard */; };
 		810435EC249399420053A2D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 810435EB249399420053A2D3 /* Assets.xcassets */; };
 		810435EF249399420053A2D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 810435ED249399420053A2D3 /* LaunchScreen.storyboard */; };
+		810435F9249399A90053A2D3 /* ShadowedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810435F7249399A90053A2D3 /* ShadowedTableViewCell.swift */; };
+		810435FA249399A90053A2D3 /* ShadowedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 810435F8249399A90053A2D3 /* ShadowedTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		810435DF2493993F0053A2D3 /* Shadowed Table View Cells.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Shadowed Table View Cells.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		810435E22493993F0053A2D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		810435E62493993F0053A2D3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		810435E92493993F0053A2D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		810435EB249399420053A2D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		810435EE249399420053A2D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		810435F0249399420053A2D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		810435F7249399A90053A2D3 /* ShadowedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowedTableViewCell.swift; sourceTree = "<group>"; };
+		810435F8249399A90053A2D3 /* ShadowedTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShadowedTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,23 @@
 		810435E12493993F0053A2D3 /* Shadowed Table View Cells */ = {
 			isa = PBXGroup;
 			children = (
+				810435F6249399860053A2D3 /* ShadowedCell */,
 				810435E22493993F0053A2D3 /* AppDelegate.swift */,
 				810435E62493993F0053A2D3 /* ViewController.swift */,
-				810435E82493993F0053A2D3 /* Main.storyboard */,
 				810435EB249399420053A2D3 /* Assets.xcassets */,
 				810435ED249399420053A2D3 /* LaunchScreen.storyboard */,
 				810435F0249399420053A2D3 /* Info.plist */,
 			);
 			path = "Shadowed Table View Cells";
+			sourceTree = "<group>";
+		};
+		810435F6249399860053A2D3 /* ShadowedCell */ = {
+			isa = PBXGroup;
+			children = (
+				810435F7249399A90053A2D3 /* ShadowedTableViewCell.swift */,
+				810435F8249399A90053A2D3 /* ShadowedTableViewCell.xib */,
+			);
+			path = ShadowedCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,7 +135,7 @@
 			files = (
 				810435EF249399420053A2D3 /* LaunchScreen.storyboard in Resources */,
 				810435EC249399420053A2D3 /* Assets.xcassets in Resources */,
-				810435EA2493993F0053A2D3 /* Main.storyboard in Resources */,
+				810435FA249399A90053A2D3 /* ShadowedTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				810435E72493993F0053A2D3 /* ViewController.swift in Sources */,
+				810435F9249399A90053A2D3 /* ShadowedTableViewCell.swift in Sources */,
 				810435E32493993F0053A2D3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,14 +155,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		810435E82493993F0053A2D3 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				810435E92493993F0053A2D3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		810435ED249399420053A2D3 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -283,6 +287,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JUUZV79G5F;
 				INFOPLIST_FILE = "Shadowed Table View Cells/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -301,6 +306,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JUUZV79G5F;
 				INFOPLIST_FILE = "Shadowed Table View Cells/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
